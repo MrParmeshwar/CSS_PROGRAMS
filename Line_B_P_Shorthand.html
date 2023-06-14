@@ -1,0 +1,71 @@
+<!-- Webpage For Line Base Placement-Shorthand -->
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 40px;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-gap: 10px;
+            background-color: #fff;
+            color: #444;
+        }
+
+        .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        /* The Format of below line "grid-row:row_start_Position/row_End_position." */
+        .a {
+            grid-row: 1 / 2;
+            /* Here 1 is a starting position of row and  2 is a ending position of row.*/
+            grid-column: 1 / 2;
+        }
+
+        .b {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+        }
+
+        .c {
+            grid-row: 1 / 2;
+            grid-column: 3 / 3;
+        }
+
+        .d {
+            grid-row: 2 / 2;
+            grid-column: 1 / 2;
+        }
+
+        .e {
+            grid-row: 2 / 2;
+            grid-column: 2 / 3;
+        }
+
+        .f {
+            grid-row: 2 / 2;
+            grid-column: 3 / 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!-- Create an Demo Webpage For spaning using span keyword -->
+<!-- This is a same code compair with span html file but we use here span keyword. -->
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 40px;
+        }
+
+        .wrapper {
+            display: grid;
+            /* grid-template-columns: 100px 100px 100px; */
+            grid-template-columns: repeat(3, [col] 100px);
+            /* The Meanign on above line and this line is a same in this line we just use repete function. */
+            grid-gap: 10px;
+            background-color: #fff;
+            color: #444;
+        }
+
+        .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .a {
+            grid-column: 1 / span 2;
+            /* Span 2 Means Span The Column upto 2 columns*/
+        }
+
+        .b {
+            grid-column: 3;
+            grid-row: 1 /span 2;
+
+        }
+
+        .c {
+            grid-column: 1;
+            grid-row: 2 /span 2;
+        }
+
+        .d {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .e {
+            grid-column: 2 /span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+
+    </div>
+</body>
+
+</html>

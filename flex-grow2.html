@@ -1,0 +1,60 @@
+<!-- Create A Webpage to demonstrate flex-grow. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow-2</title>
+    <style>
+        body {
+            margin: 40px;
+
+        }
+
+        .box {
+            background-color: #cd3d3d;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20Px;
+            border-radius: red;
+            width: 20px;
+        }
+
+        /* The Flex is use to specify the width of item that is in the container. */
+        /* The Grow is use to specufy the remaining space distributed between each Item. */
+        .a {
+            flex-basis: 100px;
+            /*Here We Set The item's width as 100px */
+            flex-grow: 1;
+        }
+
+        .b {
+            flex-basis: 200px;
+            flex-grow: 3;
+            /* The value of flex-grow has been changed in this program*/
+        }
+
+        .c {
+            flex-basis: 300px;
+            flex-grow: 1;
+        }
+
+        .wrapper {
+            width: 700px;
+            display: flex;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box a">1</div>
+        <div class="box b">2</div>
+        <div class="box c">3</div>
+
+    </div>
+</body>
+
+</html>

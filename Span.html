@@ -1,0 +1,73 @@
+<!-- Write an HTML Program to span row and column without using span keyward. -->
+<!-- Line Base Placement-Shorthand is also included in this code -->
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 40px;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-gap: 10px;
+            background-color: #fff;
+            color: #444;
+        }
+
+        .box {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        /* The Format of below line "grid-row:row_start_Position/row_End_position." */
+
+        .a {
+            grid-row: 1 / 2;
+            /* End Position  is depend on how much column you want to span*/
+            grid-column: 1 / 3;
+            /* Here We Span A upto 2 Column*/
+        }
+
+        .b {
+            grid-row: 1 / 3;
+            /* Here We Span B upto 2 Row's*/
+            grid-column: 3 / 3;
+        }
+
+        .c {
+            grid-row: 2 / 4;
+            /* Here We Span C upto 2 Rows*/
+            grid-column: 1 / 2;
+        }
+
+        .d {
+            grid-row: 2 / 3;
+            /*We Haven't Span This Element*/
+            grid-column: 2 / 2;
+        }
+
+        .e {
+            grid-row: 3 / 3;
+            /* Here We Span E upto 2 Column*/
+            grid-column: 2 / 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+
+    </div>
+</body>
+
+</html>

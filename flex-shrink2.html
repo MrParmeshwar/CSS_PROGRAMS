@@ -1,0 +1,54 @@
+<!-- Below Is The Webpage For Flex-Shrink -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Shrink2</title>
+    <style>
+        body {
+            margin: 40px;
+        }
+
+        .box {
+            background-color: #cd3d3d;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            border-color: green;
+        }
+
+        .a {
+            flex-basis: 200px;
+            flex-shrink: 1;
+        }
+
+        .b {
+            flex-basis: 200px;
+            flex-shrink: 3;
+            /* Here We Change This Code*/
+        }
+
+        .c {
+            flex-basis: 200px;
+            flex-shrink: 1;
+        }
+
+        .wrapper {
+            width: 500px;
+            display: flex;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="box a">1</div>
+        <div class="box b">2</div>
+        <div class="box c">3</div>
+    </div>
+</body>
+
+</html>
